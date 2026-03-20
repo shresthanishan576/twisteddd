@@ -108,16 +108,17 @@
 
   <!-- ── KEYRINGS CARD ── -->
   <div class="product-card fade-in">
-    <div class="product-img-wrap">
-      <img id="keyring-main" class="main-img" src="image/key.jpg" alt="Crochet Keyrings"
-           onerror="this.style.display='none'">
-      <div class="gallery-thumbs">
-        <img src="image/key.jpg"  class="gallery-thumb active" onclick="switchImg(this,'image/key.jpg')"  alt="Keyring 1" onerror="this.style.display='none'">
-        <img src="image/key2.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/key2.jpg')" alt="Keyring 2" onerror="this.style.display='none'">
-        <img src="image/key3.png" class="gallery-thumb"        onclick="switchImg(this,'image/key3.png')" alt="Keyring 3" onerror="this.style.display='none'">
-        <img src="image/key4.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/key4.jpg')" alt="Keyring 4" onerror="this.style.display='none'">
-        <img src="image/key5.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/key5.jpg')" alt="Keyring 5" onerror="this.style.display='none'">
+    <div class="flip-gallery" id="flip-key">
+      <div class="flip-book">
+        <div class="flip-page active"><img src="image/key.jpg"  alt="Keyring 1" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/key2.jpg" alt="Keyring 2" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/key3.png" alt="Keyring 3" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/key4.jpg" alt="Keyring 4" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/key5.jpg" alt="Keyring 5" onerror="this.style.display='none'"></div>
       </div>
+      <button class="flip-btn flip-prev" onclick="flipPage('flip-key',-1)">&#8249;</button>
+      <button class="flip-btn flip-next" onclick="flipPage('flip-key', 1)">&#8250;</button>
+      <div class="flip-dots" id="dots-flip-key"></div>
       <span class="product-badge">Bestseller</span>
     </div>
     <div class="product-body">
@@ -132,17 +133,18 @@
 
   <!-- ── BOUQUETS CARD ── -->
   <div class="product-card fade-in">
-    <div class="product-img-wrap">
-      <img id="bouquet-main" class="main-img" src="image/boq.jpg" alt="Crochet Bouquet"
-           onerror="this.style.display='none'">
-      <div class="gallery-thumbs">
-        <img src="image/boq.jpg"  class="gallery-thumb active" onclick="switchImg(this,'image/boq.jpg')"  alt="Bouquet 1" onerror="this.style.display='none'">
-        <img src="image/boq1.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/boq1.jpg')" alt="Bouquet 2" onerror="this.style.display='none'">
-        <img src="image/boq3.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/boq3.jpg')" alt="Bouquet 3" onerror="this.style.display='none'">
-        <img src="image/boq4.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/boq4.jpg')" alt="Bouquet 4" onerror="this.style.display='none'">
-        <img src="image/boq5.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/boq5.jpg')" alt="Bouquet 5" onerror="this.style.display='none'">
-        <img src="image/boq6.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/boq6.jpg')" alt="Bouquet 6" onerror="this.style.display='none'">
+    <div class="flip-gallery" id="flip-boq">
+      <div class="flip-book">
+        <div class="flip-page active"><img src="image/boq.jpg"  alt="Bouquet 1" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/boq1.jpg" alt="Bouquet 2" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/boq3.jpg" alt="Bouquet 3" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/boq4.jpg" alt="Bouquet 4" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/boq5.jpg" alt="Bouquet 5" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/boq6.jpg" alt="Bouquet 6" onerror="this.style.display='none'"></div>
       </div>
+      <button class="flip-btn flip-prev" onclick="flipPage('flip-boq',-1)">&#8249;</button>
+      <button class="flip-btn flip-next" onclick="flipPage('flip-boq', 1)">&#8250;</button>
+      <div class="flip-dots" id="dots-flip-boq"></div>
       <span class="product-badge">Custom</span>
     </div>
     <div class="product-body">
@@ -157,15 +159,16 @@
 
   <!-- ── CLOTHING CARD ── -->
   <div class="product-card fade-in">
-    <div class="product-img-wrap">
-      <img id="clothing-main" class="main-img" src="image/dress.jpg" alt="Crochet Clothing"
-           onerror="this.style.display='none'">
-      <div class="gallery-thumbs">
-        <img src="image/dress.jpg"  class="gallery-thumb active" onclick="switchImg(this,'image/dress.jpg')"  alt="Dress 1" onerror="this.style.display='none'">
-        <img src="image/dress1.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/dress1.jpg')" alt="Dress 2" onerror="this.style.display='none'">
-        <img src="image/dress2.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/dress2.jpg')" alt="Dress 3" onerror="this.style.display='none'">
-        <img src="image/dress3.jpg" class="gallery-thumb"        onclick="switchImg(this,'image/dress3.jpg')" alt="Dress 4" onerror="this.style.display='none'">
+    <div class="flip-gallery" id="flip-dress">
+      <div class="flip-book">
+        <div class="flip-page active"><img src="image/dress.jpg"  alt="Dress 1" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/dress1.jpg" alt="Dress 2" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/dress2.jpg" alt="Dress 3" onerror="this.style.display='none'"></div>
+        <div class="flip-page"><img src="image/dress3.jpg" alt="Dress 4" onerror="this.style.display='none'"></div>
       </div>
+      <button class="flip-btn flip-prev" onclick="flipPage('flip-dress',-1)">&#8249;</button>
+      <button class="flip-btn flip-next" onclick="flipPage('flip-dress', 1)">&#8250;</button>
+      <div class="flip-dots" id="dots-flip-dress"></div>
       <span class="product-badge">Premium</span>
     </div>
     <div class="product-body">
@@ -404,14 +407,56 @@
     });
   });
 
-  // ── Image Gallery ─────────────
-  function switchImg(thumb, newSrc) {
-    const wrap = thumb.closest('.product-img-wrap');
-    const mainImg = wrap.querySelector('.main-img');
-    if (mainImg) mainImg.src = newSrc;
-    wrap.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
-    thumb.classList.add('active');
+  // ── Flip Gallery ─────────────
+  function initFlip(id) {
+    const gallery = document.getElementById(id);
+    if (!gallery) return;
+    const pages = gallery.querySelectorAll('.flip-page');
+    const dotsContainer = document.getElementById('dots-' + id);
+    pages.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'flip-dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goToPage(id, i);
+      dotsContainer.appendChild(dot);
+    });
   }
+
+  function flipPage(id, dir) {
+    const gallery = document.getElementById(id);
+    const pages = Array.from(gallery.querySelectorAll('.flip-page'));
+    const dots  = Array.from(document.querySelectorAll('#dots-' + id + ' .flip-dot'));
+    let current = pages.findIndex(p => p.classList.contains('active'));
+    const next = (current + dir + pages.length) % pages.length;
+
+    pages[current].classList.remove('active');
+    pages[current].classList.add('flip-out');
+    setTimeout(() => pages[current].classList.remove('flip-out'), 500);
+
+    pages[next].classList.add('active');
+
+    dots[current].classList.remove('active');
+    dots[next].classList.add('active');
+  }
+
+  function goToPage(id, index) {
+    const gallery = document.getElementById(id);
+    const pages = Array.from(gallery.querySelectorAll('.flip-page'));
+    const dots  = Array.from(document.querySelectorAll('#dots-' + id + ' .flip-dot'));
+    let current = pages.findIndex(p => p.classList.contains('active'));
+    if (current === index) return;
+
+    pages[current].classList.remove('active');
+    pages[current].classList.add('flip-out');
+    setTimeout(() => pages[current].classList.remove('flip-out'), 500);
+
+    pages[index].classList.add('active');
+    dots[current].classList.remove('active');
+    dots[index].classList.add('active');
+  }
+
+  // Init all flip galleries
+  ['flip-key', 'flip-boq', 'flip-dress'].forEach(initFlip);
+
 </script>
 
 </body>
